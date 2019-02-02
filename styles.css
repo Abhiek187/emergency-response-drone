@@ -1,0 +1,19 @@
+body {
+	font-family: Verdana, Courier New, Arial, Sans-serif;
+	width: 100%;
+	text-align: center;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+table {
+	margin: 0 auto;
+}
+
+caption {
+	font-weight: bold;
+}
