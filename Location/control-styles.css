@@ -28,34 +28,53 @@ h3 {
 	text-decoration: underline;
 }
 
-table,
-th,
-td {
+/*div {
+	display: flex;
+	flex-wrap: wrap;
+}*/
+
+.fas {
+	font-size: 2em;
 	border: 1px solid black;
-	background-color: white;
+	background-color: lightgray;
+	padding: 5%;
 }
 
-.table-container {
-	overflow-x: auto;
+.fas:hover {
+	background-color: gray;
 }
 
-.group-table {
-	margin: 0 auto;
-}
-
-.group-table caption {
-	font-weight: bold;
-}
-
-.week,
-.week-agenda {
-	text-align: left;
+.data {
+	width: 10%;
+	float: left;
 	margin-left: 5%;
+}
+
+video {
+	width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+.power {
+	width: 10%;
+	float: right;
 	margin-right: 5%;
 }
 
-p {
-	margin-left: 5%;
-	margin-right: 5%;
-	text-align: left;
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rotation,
+.forward,
+.throttle,
+.strafe {
+	width: 25%;
+	margin: 1% auto;
+}
+
+.text {
+	font-size: 1.5em;
 }
