@@ -19,9 +19,7 @@
 			<div class="data">
 				<p class="battery-level">Battery Level: XXX %</p>
 				<p class="speed">Speed: X m/s</p>
-				<p class="location">Location:
-					<p id="demo"></p>
-				</p>
+				<p id="demo"></p>
 			</div>
 			<video id="video" width="640" height="480" autoplay>Drone Camera Offline</video>
 			<div class="power">
@@ -37,7 +35,7 @@
 					<i class="fas fa-undo" style="transform: scaleX(-1)"></i>
 				</div>
 				<div class="forward">
-					<p class="text">Forward/Reverse:<br></p>
+					<p class="text">Forward:<br></p>
 					<i class="fas fa-backward"></i>
 					<i class="fas fa-forward"></i>
 				</div>
@@ -95,8 +93,10 @@
 			}
 
 			function showPosition(position) {
-			  x.innerHTML = "Latitude: " + position.coords.latitude +
-			  "&deg;<br>Longitude: " + position.coords.longitude + "&deg;";
+				const lat = position.coords.latitude;
+				const long = position.coords.longitude;
+				x.innerHTML = "Location:<br>Lat: " + Math.round(lat*100)/100 +
+				"&deg;<br>Long: " + Math.round(long*100)/100 + "&deg;";
 			}
 
 			getLocation();

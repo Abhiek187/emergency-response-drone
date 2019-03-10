@@ -78,3 +78,9 @@ video {
 .text {
 	font-size: 1.5em;
 }
+
+@media screen and (max-width: 800px) {
+	.text {
+		font-size: 1em;
+	}
+}
