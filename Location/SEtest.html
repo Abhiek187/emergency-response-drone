@@ -25,6 +25,10 @@
 			<div class="power">
 				<p class="text">Power-on:</p>
 				<i class="fas fa-power-off"></i>
+			    <div class="select">
+			        <label for="videoSource">Video source: </label>
+			        <select id="videoSource"></select>
+			    </div>
 			</div>
 		</div>
 		<div class="controls-container">
@@ -60,7 +64,7 @@
 		<!--<video id="video" width="640" height="480" autoplay></video>
 		<button id="snap">Snap Photo</button>
 		<canvas id="canvas" width="640" height="480"></canvas>-->
-		<script>
+		<!--<script>
 			// Grab elements, create settings, etc.
 			var video = document.getElementById('video');
 
@@ -73,7 +77,7 @@
 			    video.play();
 			  });
 			}
-		</script>
+		</script>-->
 		<!-- access camera part ends here -->
 		<!--<p>Click the button to get your coordinates.</p>
 		<button onclick="getLocation()">Try It</button>
@@ -124,5 +128,6 @@
 
 			navigator.geolocation.getCurrentPosition(success, error, options);
 		</script>-->
+		<script src="control-logic.js"></script>
 	</body>
 </html>
