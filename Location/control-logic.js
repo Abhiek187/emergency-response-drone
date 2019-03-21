@@ -1,5 +1,6 @@
 'use strict';
 
+// Get location
 var x = document.getElementById("demo");
 
 function getLocation() {
@@ -19,6 +20,7 @@ function showPosition(position) {
 
 getLocation();
 
+// Get video feed
 const videoElement = document.querySelector('video');
 //const audioSelect = document.querySelector('select#audioSource');
 const videoSelect = document.querySelector('select#videoSource');
@@ -76,3 +78,32 @@ function gotStream(stream) {
 function handleError(error) {
   console.error('Error: ', error);
 }
+
+// Get battery status
+window.onload = function () {
+	function updateBatteryStatus(battery) {
+		document.querySelector('#charging').textContent = battery.charging ? 'charging' : 'not charging';
+		document.querySelector('#level').textContent = `${battery.level*100}%`;
+		const hrsLeft = Math.floor(battery.dischargingTime/3600);
+		const minsLeft = Math.floor(battery.dischargingTime/60 - hrsLeft*60);
+		document.querySelector('#dischargingTime').textContent = `${hrsLeft} hr ${minsLeft} min remaining`;
+	}
+
+	navigator.getBattery().then(function(battery) {
+		// Update the battery status initially when the promise resolves ...
+		updateBatteryStatus(battery);
+
+		// .. and for any subsequent updates.
+		battery.onchargingchange = function () {
+			updateBatteryStatus(battery);
+		};
+
+		battery.onlevelchange = function () {
+			updateBatteryStatus(battery);
+		};
+
+		battery.ondischargingtimechange = function () {
+			updateBatteryStatus(battery);
+		};
+	});
+};
