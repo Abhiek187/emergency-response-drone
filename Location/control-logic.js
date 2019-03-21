@@ -82,11 +82,7 @@ function handleError(error) {
 // Get battery status
 window.onload = function () {
 	function updateBatteryStatus(battery) {
-		document.querySelector('#charging').textContent = battery.charging ? 'charging' : 'not charging';
 		document.querySelector('#level').textContent = `${battery.level*100}%`;
-		const hrsLeft = Math.floor(battery.dischargingTime/3600);
-		const minsLeft = Math.floor(battery.dischargingTime/60 - hrsLeft*60);
-		document.querySelector('#dischargingTime').textContent = `${hrsLeft} hr ${minsLeft} min remaining`;
 	}
 
 	navigator.getBattery().then(function(battery) {
