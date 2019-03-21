@@ -1,5 +1,24 @@
 'use strict';
 
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  const lat = position.coords.latitude;
+  const long = position.coords.longitude;
+  x.innerHTML = "Location:<br>Lat: " + Math.round(lat*100)/100 +
+  "&deg;<br>Long: " + Math.round(long*100)/100 + "&deg;";
+}
+
+getLocation();
+
 const videoElement = document.querySelector('video');
 //const audioSelect = document.querySelector('select#audioSource');
 const videoSelect = document.querySelector('select#videoSource');
