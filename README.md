@@ -11,3 +11,9 @@ This is the repo for our Software Engineering project. The Search and Rescue Ass
 - **physical-data**: This branch deals with controlling how SARA will move when in search and rescue mode. It will keep track of its speed, direction, power consumption, and more.
 
 - **obstacles**: With help from its physical data, SARA will know how to respond to obstacles in its path when navigating through debris to find victims.
+
+Links to the README subfolders:
+- [code](1_code/README.md)
+- [unit testing](2_unit_testing/README.md)
+- [integration testing](3_integration_testing/README.md)
+- [data collection](4_data_collection/README.md)
