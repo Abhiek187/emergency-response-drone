@@ -14,11 +14,11 @@ function getLocation() {
 function showPosition(position) {
   const lat = position.coords.latitude;
   const long = position.coords.longitude;
-  x.innerHTML = "Location:<br>Lat: " + Math.round(lat*100)/100 +
-  "&deg;<br>Long: " + Math.round(long*100)/100 + "&deg;";
+  x.innerHTML = "Location:<br>Lat: " + Math.round(lat*100000)/100000 +
+  "&deg;<br>Long: " + Math.round(long*100000)/100000 + "&deg;";
 }
 
-getLocation();
+setInterval(getLocation,5000);
 
 // Get video feed
 const videoElement = document.querySelector('video');
