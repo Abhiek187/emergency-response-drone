@@ -82,7 +82,7 @@ function handleError(error) {
 // Get battery status
 window.onload = function () {
 	function updateBatteryStatus(battery) {
-		document.querySelector('#level').textContent = `${battery.level*100}%`;
+		document.querySelector('#level').textContent = `${Math.round(battery.level*100)}%`;
 	}
 
 	navigator.getBattery().then(function(battery) {
