@@ -1,51 +1,44 @@
 import RPi.GPIO as GPIO
 import time
 while True:
-    try:
-        GPIO.setmode(GPIO.BOARD)
+	try:
+ 		GPIO.setmode(GPIO.BOARD)
+		#assign gpio pin numbers to trigger&echo
+		PIN_TRIGGER = 7
+		PIN_ECHO = 11
 
-        Trig = 7
-        Echo = 11
-        # Assigns the value of the pin position on the Pi
+		#assign trigger&echo to proper gpio i/o status
+		GPIO.setup(PIN_TRIGGER, GPIO.OUT)
+		GPIO.setup(PIN_ECHO, GPIO.IN)
 
-        GPIO.setup(Trig, GPIO.OUT)
-        GPIO.setup(Echo, GPIO.IN)
-        # Assigns the variables Trig and Echo to the
-        # appropriate I/O GPIO function.
+		#set trigger to low
+		GPIO.output(PIN_TRIGGER, GPIO.LOW)
 
-        GPIO.output(Trig, GPIO.LOW)
-        # Sets the output pin, Trig to LOW
+		#prompt notification, sensor calibration
+		print "Waiting for sensor to settle"
+		time.sleep(2)
+		print "Calculating distance"
 
-        print("Waiting for sensor to settle")
-        time.sleep(1)
-        print("Calculating distance")
-        # Outputs a prompt which notifies the user that the
-        # program is calculating the distance after the sensor
-        # is stable enough to take a measurement.
+		#set trigger to high
+		GPIO.output(PIN_TRIGGER, GPIO.HIGH)
+		time.sleep(0.00001)
+		GPIO.output(PIN_TRIGGER, GPIO.LOW)
 
-        GPIO.output(Trig, GPIO.HIGH)
-        # Sets the output pin, Trig to HIGH
+		#condition to set start/stop time based on echo
+		while GPIO.input(PIN_ECHO)==0:
+			pulse_start_time = time.time()
+      		while GPIO.input(PIN_ECHO)==1:
+                	pulse_end_time = time.time()
 
-        time.sleep(0.00001)
-        # A small pause of 0.01 ms
+		#calculate distance based on times. assume speed of sound to  be 17150 cm/s. round distance to 2 decimal places
+                pulse_duration = pulse_end_time - pulse_start_time
+                distance = round(pulse_duration * 17150, 2)
 
-        GPIO.output(Trig, GPIO.LOW)
-        # Resets the value of Trig to LOW
+		#display distance
+                print "Distance:",distance,"cm"
 
-        while GPIO.input(Echo)==0:
-            startTime = time.time()
-        while GPIO.input(Echo)==1:
-            endTime = time.time()
-        # Conditional statement to tell the sensor to calculate the time
-        # based on whether the input Echo is equal to 0 or 1.
-
-        durationTime = endTime - startTime
-        distance = round(durationTime * 17150, 2)
-        print("Distance:", distance,"cm")
-        # Calculate the total time based on the total time, and calculates the distance
-        # between the sensor and the measured object based on the speed of sound in cm in,
-        # one direction 17150 cm/s. This result is rounded to two decimal places, and returned.
-
-    finally:
-        GPIO.cleanup()
-        # Resets any assigned values to the pins so the code can be ran fresh again.
+	#allow keyboard interrupt to stop program
+	except KeyboardInterrupt:
+		print "Measurement stopped by User"
+		GPIO.cleanup()
+                break
