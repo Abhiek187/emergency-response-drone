@@ -83,6 +83,9 @@ function handleError(error) {
 window.onload = function () {
 	function updateBatteryStatus(battery) {
 		document.querySelector('#level').textContent = `${Math.round(battery.level*100)}%`;
+		if(battery.level<=0.2) {
+		alert('Low Battery');
+		}
 	}
 
 	navigator.getBattery().then(function(battery) {
