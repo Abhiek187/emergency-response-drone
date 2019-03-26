@@ -82,9 +82,13 @@ function handleError(error) {
 // Get battery status
 window.onload = function () {
 	function updateBatteryStatus(battery) {
-		document.querySelector('#level').textContent = `${Math.round(battery.level*100)}%`;
-		if(battery.level<=0.2) {
-		alert('Low Battery');
+    const label = document.querySelector('#level');
+		label.textContent = `${Math.round(battery.level*100)}%`;
+
+    // Alert if low battery
+		if(battery.level <= 0.2) {
+		  alert('Low Battery');
+      label.style.color = 'red';
 		}
 	}
 
