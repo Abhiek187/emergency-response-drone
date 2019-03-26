@@ -89,7 +89,9 @@ window.onload = function () {
 		if(battery.level <= 0.2) {
 		  alert('Low Battery');
       label.style.color = 'red';
-		}
+		} else {
+      label.style.color = 'black';
+    }
 	}
 
 	navigator.getBattery().then(function(battery) {
