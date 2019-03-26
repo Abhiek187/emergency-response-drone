@@ -1,5 +1,5 @@
 # HC-SR04 Code Explanation
-![alt text](https://cdn.shopify.com/s/files/1/1978/9859/products/02_13_23_grande.jpg?v=1499266559)
+![alt text](https://sc02.alicdn.com/kf/HTB1N.XpQVXXXXbaXVXXq6xXFXXX5/HC-SR04-HCSR04-Ultrasonic-Sensor-Wave-Detector.jpg_50x50.jpg)
 ## How It Works
 The ultrasonic sensor, as the name implies, sends a quick pulse through the air via the trigger, in the direction that the sensor is facing. This pulse reflects off of a surface and the resulting reflected wave is then read by the 2nd sensor, the echo. The distance between the object and the sensor is thus calculated via the code. 
 
