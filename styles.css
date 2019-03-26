@@ -2,7 +2,7 @@ body {
 	font-family: Verdana, Courier New, Arial, Sans-serif;
 	width: 100%;
 	text-align: center;
-	background: linear-gradient(orange, yellow) no-repeat center fixed;
+	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 	overflow-x: hidden;
 	margin: 0;
 }
