@@ -11,5 +11,7 @@ These pins have to be connected to a Raspberry Pi so that the data that is recei
 #### Connectivity
 The power and ground pins can be directly connected to the Pi in the appropriately allocated pins on the board. The Trig pin can also be connected directly but in an appropriate GPIO pin that can be later accessed by the Pi's terminal in Raspbian. The Echo pins have a different configuration. The pin first needs to pass through a 1k ohm resistor, and the resulting current than has to be split between a 2k ohm resistor and a wire that is connected into another GPIO pin. The reason to use resistors, is to bring down the voltage of the signal, thus not to fry the Raspberry Pi. 
 
+##### NOTE: The resistor values can be changed based on the sensitivity of the results the user wishes to achieve.
+
 ## Software
 The software of the code is explained via comments within the script. 
