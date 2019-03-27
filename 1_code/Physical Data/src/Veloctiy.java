@@ -7,7 +7,7 @@ import java.net.URLConnection;
 import java.io.FilterInputStream;
 import java.io.DataInputStream;
 import java.lang.Double;
-public class Velocity {
+public class Veloctiy {
 	public static void main(String[] args) throws IOException
 	{
 		URL url = new URL("https://abhiek187.github.io/emergency-response-drone/1_code/Location/SEtest.html");
