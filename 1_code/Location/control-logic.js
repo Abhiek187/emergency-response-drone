@@ -33,10 +33,10 @@ function getSpeed(lat, lat2, long, long2){
 	const circum = 2* Math.atan(Math.sqrt(area), Math.sqrt(1-area));
 	const distance = r*circum*1000;
 	const totalDistance = Math.pow(distance,2);
-	const speed = totalDistance/1;
+	const speed = totalDistance/3;
 	return speed;
 }
-setInterval(getLocation,1000);
+setInterval(getLocation,3000);
 
 // Get video feed
 const videoElement = document.querySelector('video');
