@@ -27,8 +27,8 @@ function showPosition(position) {
 
 function getSpeed(lat, lat2, long, long2){
 	const r  = 6371;
-	const latDistance = (lat2-lat)*Math.PI/180;
-	const longDistance = (long2-long)*Math.PI/180;
+	const latDistance = (lat-lat2)*Math.PI/180;
+	const longDistance = (long-long2)*Math.PI/180;
 	const area = Math.sin(latDistance/2)*Math.sin(latDistance/2)+Math.cos((lat)*Math.PI/180)*Math.cos((lat2)*Math.PI/180)*Math.sin(longDistance/2)*Math.sin(longDistance/2);
 	const circum = 2* Math.atan(Math.sqrt(area), Math.sqrt(1-area));
 	const distance = r*circum*1000;
