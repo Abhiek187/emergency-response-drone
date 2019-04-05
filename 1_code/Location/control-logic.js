@@ -4,6 +4,7 @@
 var x = document.getElementById("demo");
 let lat2=null;
 let long2=null;
+let tries = 0; // # of attempts to change the location
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -15,6 +16,10 @@ function getLocation() {
 function showPosition(position) {
   const lat = position.coords.latitude;
   const long = position.coords.longitude;
+  ++tries;
+  if (lat == lat2 && long == long2) {
+    return;
+  }
   x.innerHTML = "Location:<br>Lat: " + Math.round(lat*100000)/100000 +
   "&deg;<br>Long: " + Math.round(long*100000)/100000 + "&deg;";
   const velocity=getSpeed(lat,lat2,long,long2);
@@ -23,6 +28,7 @@ function showPosition(position) {
   }
   lat2=lat;
   long2=long;
+  tries = 0;
 }
 
 function getSpeed(lat, lat2, long, long2){
@@ -33,7 +39,7 @@ function getSpeed(lat, lat2, long, long2){
 	const circum = 2* Math.atan(Math.sqrt(area), Math.sqrt(1-area));
 	const distance = r*circum*1000;
 	const totalDistance = Math.pow(distance,2);
-	const speed = totalDistance/3;
+	const speed = totalDistance/(3*tries);
 	return speed;
 }
 setInterval(getLocation,3000);
