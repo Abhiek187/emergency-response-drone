@@ -17,7 +17,7 @@ function showPosition(position) {
   const lat = position.coords.latitude;
   const long = position.coords.longitude;
   ++tries;
-  if (lat == lat2 && long == long2) {
+  if (lat === lat2 && long === long2) {
     return;
   }
   x.innerHTML = "Location:<br>Lat: " + Math.round(lat*100000)/100000 +
