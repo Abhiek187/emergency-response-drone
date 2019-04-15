@@ -4,8 +4,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>80</x>
-      <y>80</y>
+      <x>48</x>
+      <y>96</y>
       <w>96</w>
       <h>176</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1376</x>
-      <y>624</y>
+      <x>1344</x>
+      <y>640</y>
       <w>96</w>
       <h>176</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>880</x>
-      <y>64</y>
+      <x>848</x>
+      <y>80</y>
       <w>144</w>
       <h>128</h>
     </coordinates>
@@ -40,8 +40,8 @@ recordList</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>256</x>
-      <y>176</y>
+      <x>224</x>
+      <y>192</y>
       <w>176</w>
       <h>144</h>
     </coordinates>
@@ -55,8 +55,8 @@ droneCamera</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1264</x>
-      <y>256</y>
+      <x>1232</x>
+      <y>272</y>
       <w>160</w>
       <h>128</h>
     </coordinates>
@@ -69,8 +69,8 @@ droneParams</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>144</x>
-      <y>528</y>
+      <x>112</x>
+      <y>544</y>
       <w>176</w>
       <h>144</h>
     </coordinates>
@@ -84,22 +84,22 @@ droneParams</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
-      <y>592</y>
-      <w>176</w>
+      <x>768</x>
+      <y>608</y>
+      <w>192</w>
       <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 Connector
 --
-wifiConnection</panel_attributes>
+remoteConnection</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>816</x>
-      <y>384</y>
+      <x>784</x>
+      <y>400</y>
       <w>176</w>
       <h>128</h>
     </coordinates>
@@ -112,8 +112,8 @@ qualityControl</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>528</x>
-      <y>288</y>
+      <x>496</x>
+      <y>304</y>
       <w>144</w>
       <h>128</h>
     </coordinates>
@@ -126,8 +126,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>128</x>
-      <y>112</y>
+      <x>96</x>
+      <y>128</y>
       <w>160</w>
       <h>160</h>
     </coordinates>
@@ -137,8 +137,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>208</x>
-      <y>304</y>
+      <x>176</x>
+      <y>320</y>
       <w>160</w>
       <h>256</h>
     </coordinates>
@@ -148,8 +148,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>416</x>
-      <y>112</y>
+      <x>384</x>
+      <y>128</y>
       <w>496</w>
       <h>160</h>
     </coordinates>
@@ -160,8 +160,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
-      <y>176</y>
+      <x>560</x>
+      <y>192</y>
       <w>384</w>
       <h>144</h>
     </coordinates>
@@ -172,8 +172,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>304</x>
-      <y>400</y>
+      <x>272</x>
+      <y>416</y>
       <w>320</w>
       <h>192</h>
     </coordinates>
@@ -183,8 +183,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>304</x>
-      <y>592</y>
+      <x>272</x>
+      <y>608</y>
       <w>528</w>
       <h>112</h>
     </coordinates>
@@ -194,19 +194,19 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>960</x>
-      <y>624</y>
-      <w>448</w>
+      <x>944</x>
+      <y>640</y>
+      <w>432</w>
       <h>80</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;20.0;260.0;30.0</additional_attributes>
+    <additional_attributes>10.0;20.0;250.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1328</x>
-      <y>368</y>
+      <x>1296</x>
+      <y>384</y>
       <w>96</w>
       <h>288</h>
     </coordinates>
@@ -216,8 +216,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>976</x>
-      <y>432</y>
+      <x>944</x>
+      <y>448</y>
       <w>432</w>
       <h>240</h>
     </coordinates>
@@ -227,8 +227,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>304</x>
-      <y>432</y>
+      <x>272</x>
+      <y>448</y>
       <w>544</w>
       <h>192</h>
     </coordinates>
@@ -239,8 +239,8 @@ contactInfo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1008</x>
-      <y>112</y>
+      <x>976</x>
+      <y>128</y>
       <w>352</w>
       <h>176</h>
     </coordinates>
@@ -251,8 +251,8 @@ records data &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>304</y>
+      <x>624</x>
+      <y>320</y>
       <w>640</w>
       <h>80</h>
     </coordinates>
