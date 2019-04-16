@@ -103,6 +103,15 @@ function handleError(error) {
   console.error('Error: ', error);
 }
 
+// Get USB devices
+navigator.usb.getDevices()
+.then(devices => {
+  document.querySelector('.controls').innerHTML += "Total devices: " + devices.length;
+  devices.forEach(device => {
+    document.querySelector('.controls').innerHTML += "Product name: " + device.productName + ", serial number " + device.serialNumber;
+  });
+});
+
 // Get battery status
 window.onload = function () {
 	function updateBatteryStatus(battery) {
