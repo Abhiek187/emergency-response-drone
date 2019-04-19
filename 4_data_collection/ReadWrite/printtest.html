@@ -1,3 +1,5 @@
+<!-- Open this page on localhost:9001 using the following:
+  $ python3 -m http.server 9001-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,12 +17,12 @@
     function loadlink() {
       const list = document.querySelector('#list');
       fetch('numbers.txt').then(resp => resp.text()).then(data => {
-        list.textContent = data;
+        list.textContent = data; // fetches text file, then displays its content
       }).catch(err => {
         console.log(err);
       });
     }
-    setInterval(loadlink, 3000);
+    setInterval(loadlink, 3000); // numbers update every 3 seconds
   </script>
   <!-- <div id="main"></div> -->
   </body>
