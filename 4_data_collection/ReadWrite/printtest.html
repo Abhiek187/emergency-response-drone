@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ 
+  <body>
+  <div id="main"></div>
+  <div id="list"><p><iframe src="numbers.txt" width=200 height=400 frameborder=0 ></iframe></p></div>
+    <script>
+function loadlink(){
+    $('#list').load('printtest.html',function () {
+         $(this).unwrap();
+    });
+}
+
+loadlink(); // This will run on page load
+setInterval(function(){
+    loadlink() // this will run after every 5 seconds
+}, 500);
+  </script>
+  <!-- <div id="main"></div> -->
+  </body>
+  </html>
