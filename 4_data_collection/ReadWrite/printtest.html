@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
- 
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
   <body>
   <div id="main"></div>
   <div id="list"><p><iframe src="numbers.txt" width=200 height=400 frameborder=0 ></iframe></p></div>
-    <script>
-function loadlink(){
-    $('#list').load('printtest.html',function () {
-         $(this).unwrap();
-    });
-}
-
-loadlink(); // This will run on page load
-setInterval(function(){
-    loadlink() // this will run after every 5 seconds
-}, 500);
+  <script>
+    function loadlink() {
+      /*const file = new XMLHttpRequest();
+      file.open('GET', 'numbers.txt');
+      file.onreadystatechange = function () {
+        if (file.readyState === 4) {
+            if(file.status === 200 || file.status == 0) {
+              const list = document.querySelector('#list');
+              const num = file.responseText;
+              list.textContent = num;
+            }
+        }
+      }
+      file.send();*/
+      /*$('#list').load('printtest.html',function () {
+        $(this).unwrap();
+      });*/
+      const list = document.querySelector('#list');
+      fetch('numbers.txt').then(resp => resp.text).then(data => {
+        list.textContent = data;
+      }).catch(err => {
+        console.log(err);
+      });
+    }
+    setInterval(loadlink, 5000);
   </script>
   <!-- <div id="main"></div> -->
   </body>
