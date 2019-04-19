@@ -8,56 +8,34 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	</head>
 	<body>
-		<h1 class="title">Search and Rescue Assistant (S.A.R.A.)</h1>
-		<h2 class="sub-title">Software Engineering Group 8</h2>
-		<nav class="nav-bar">
-			<a href="../../index.html">About</a>
-			<a href="#">Controller</a>
-		</nav>
-		<hr>
-		<div class="image-container">
-			<div class="data">
-				<p class="battery-level">Battery Level:</p>
-				<p id="level">unknown</p>
-				<p class="speed">Speed: 0 m/s</p>
-				<p id="demo"></p>
+		<video id="video" controls="true" width="640" height="480" autoplay playsinline>
+			Drone Camera Offline
+		</video>
+
+		<div class="content">
+			<div class="top">
+				<div class="source">
+				<a for="videoSource" class="text"> Video source: </a>
+				<a><select id="videoSource"></select></a>
+				</div>
+				<div class="power">
+					<a class="text">Power-on: </a>
+					<a class="fas fa-power-off"></a>
+				</div>
 			</div>
-			<video id="video" controls="true" width="640" height="480" autoplay playsinline>
-				Drone Camera Offline
-			</video>
-			<div class="power">
-				<p class="text">Power-on:</p>
-				<i class="fas fa-power-off"></i>
-			    <div class="select">
-			        <label for="videoSource" class="text"> Video source: </label>
-			        <select id="videoSource"></select>
-			    </div>
+			<div class="bottom">
+				<a class="battery-level">Battery Level:</a>
+				<a id="level">unknown</a>
+				<a class="speed">Speed: 0 m/s</a>
+				<a id="demo"></a>
 			</div>
 		</div>
-		<div class="controls-container">
-			<div class="controls">
-				<div class="rotation">
-					<p class="text">Rotation:<br></p>
-					<i class="fas fa-undo"></i>
-					<i class="fas fa-undo" style="transform: scaleX(-1)"></i>
-				</div>
-				<div class="forward">
-					<p class="text">Forward:<br></p>
-					<i class="fas fa-backward"></i>
-					<i class="fas fa-forward"></i>
-				</div>
-				<div class="throttle">
-					<p class="text">Throttle:<br></p>
-					<i class="fas fa-arrow-up"></i>
-					<i class="fas fa-arrow-down"></i>
-				</div>
-				<div class="strafe">
-					<p class="text">Strafe:<br></p>
-					<i class="fas fa-arrow-left"></i>
-					<i class="fas fa-arrow-right"></i>
-				</div>
-			</div>
-		</div>
+	<a href="../../index.html" class="main">&#8249;</a>
+	
+	</body>
+</html>
+
+
 		<!-- Original Design below -->
 		<!--<hr>
 		<input type="file" accept="video/*;capture=camcorder">
@@ -132,5 +110,3 @@
 			navigator.geolocation.getCurrentPosition(success, error, options);
 		</script>-->
 		<script src="control-logic.js"></script>
-	</body>
-</html>

@@ -123,7 +123,7 @@ window.onload = function () {
 		  alert('Low Battery');
       label.style.color = 'red';
 		} else {
-      label.style.color = 'black';
+      label.style.color = 'white';
     }
 	}
 
