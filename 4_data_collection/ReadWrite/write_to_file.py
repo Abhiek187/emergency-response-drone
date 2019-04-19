@@ -10,7 +10,7 @@ while True:
 		with open('numbers.txt', 'w') as num_file:
 			num_file.write(str(rand_num))
 
-		time.sleep(5)
+		time.sleep(3)
 	except KeyboardInterrupt:
 		print("Server disconnected")
 		break

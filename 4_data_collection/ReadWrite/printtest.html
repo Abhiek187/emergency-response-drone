@@ -5,32 +5,22 @@
   </head>
   <body>
   <div id="main"></div>
-  <div id="list"><p><iframe src="numbers.txt" width=200 height=400 frameborder=0 ></iframe></p></div>
+  <div id="list">
+    Sensor data offline
+    <!--<p>
+      <iframe src="numbers.txt" width=200 height=400 frameborder=0 ></iframe>
+    </p>-->
+  </div>
   <script>
     function loadlink() {
-      /*const file = new XMLHttpRequest();
-      file.open('GET', 'numbers.txt');
-      file.onreadystatechange = function () {
-        if (file.readyState === 4) {
-            if(file.status === 200 || file.status == 0) {
-              const list = document.querySelector('#list');
-              const num = file.responseText;
-              list.textContent = num;
-            }
-        }
-      }
-      file.send();*/
-      /*$('#list').load('printtest.html',function () {
-        $(this).unwrap();
-      });*/
       const list = document.querySelector('#list');
-      fetch('numbers.txt').then(resp => resp.text).then(data => {
+      fetch('numbers.txt').then(resp => resp.text()).then(data => {
         list.textContent = data;
       }).catch(err => {
         console.log(err);
       });
     }
-    setInterval(loadlink, 5000);
+    setInterval(loadlink, 3000);
   </script>
   <!-- <div id="main"></div> -->
   </body>
