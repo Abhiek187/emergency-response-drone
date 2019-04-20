@@ -7,8 +7,8 @@ $(document).ready(function() {
   $(function() {
     $('body').vegas({
         slides: [
-            { src: '6_website/slide-1.jpg' },
-            { src: '6_website/slide-2.jpg' }
+            { src: '1_code/about/slide-1.jpg' },
+            { src: '1_code/about/slide-2.jpg' }
         ],
         timer: false,
         transition: [ 'zoomOut', ]
@@ -24,13 +24,13 @@ $(document).ready(function() {
         } else {
           $('.go-top').fadeOut(200);
         }
-        });   
+        });
         // Animate the scroll to top
       $('.go-top').click(function(event) {
         event.preventDefault();
       $('html, body').animate({scrollTop: 0}, 300);
       })
-      
+
 
   /* wow
   -------------------------------*/
