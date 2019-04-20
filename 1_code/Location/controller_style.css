@@ -22,7 +22,7 @@ body {
 	bottom: 0;
 }
 .bottom a,.source a {
-	float: left;  
+	float: left;
 	margin-left: 5%;
 }
 
@@ -40,13 +40,14 @@ body {
 }
 
 .fas:hover {
+	cursor: pointer;
 	background-color: red;
 }
 
 
 
 video {
-	
+
 	width: 100%;
 	height: auto;
 	margin: auto;
