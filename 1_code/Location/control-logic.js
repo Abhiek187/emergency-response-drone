@@ -115,16 +115,18 @@ function handleError(error) {
 // Get battery status
 window.onload = function () {
 	function updateBatteryStatus(battery) {
-    const label = document.querySelector('#level');
+		const label = document.querySelector('#level');
 		label.textContent = `${Math.round(battery.level*100)}%`;
 
-    // Alert if low battery
+ 		// Alert if low battery
 		if(battery.level <= 0.2) {
-		  alert('Low Battery');
-      label.style.color = 'red';
-		} else {
-      label.style.color = 'white';
-    }
+			document.getElementById("low").style.display = "inline-block";
+      			label.style.color = 'red';
+		} 
+		else {
+			document.getElementById("low").style.display = "none";
+			label.style.color = 'white';
+		}
 	}
 
 	navigator.getBattery().then(function(battery) {

@@ -31,6 +31,10 @@ body {
 	margin-right: 5%;
 }
 
+.Low_Battery{
+	display:none;
+	color:red;
+}
 .fas {
 	font-size: 1.5em;
 }
