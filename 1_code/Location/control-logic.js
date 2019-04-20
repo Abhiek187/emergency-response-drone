@@ -113,6 +113,13 @@ function handleError(error) {
   console.error('Error: ', error);
 }
 
+function toggleVideo() {
+  const video = document.querySelector('#video');
+  video.hidden = !video.hidden;
+}
+
+document.querySelector('.fa-power-off').onclick = toggleVideo; // Toggle between seeing video
+
 // Get USB devices
 /*navigator.usb.getDevices()
 .then(devices => {
@@ -132,7 +139,7 @@ window.onload = function () {
 		if(battery.level <= 0.2) {
 			document.getElementById("low").style.display = "inline-block";
       			label.style.color = 'red';
-		} 
+		}
 		else {
 			document.getElementById("low").style.display = "none";
 			label.style.color = 'white';
