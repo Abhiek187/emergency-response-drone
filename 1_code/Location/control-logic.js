@@ -32,14 +32,24 @@ function showPosition(position) {
 }
 
 function getSpeed(lat, lat2, long, long2){
-	const r  = 6371;
+	/*const r  = 6371;
 	const latDistance = (lat-lat2)*Math.PI/180;
 	const longDistance = (long-long2)*Math.PI/180;
 	const area = Math.sin(latDistance/2)*Math.sin(latDistance/2)+Math.cos((lat)*Math.PI/180)*Math.cos((lat2)*Math.PI/180)*Math.sin(longDistance/2)*Math.sin(longDistance/2);
 	const circum = 2* Math.atan(Math.sqrt(area), Math.sqrt(1-area));
 	const distance = r*circum*1000;
 	const totalDistance = Math.pow(distance,2);
-	const speed = totalDistance/(3*tries);
+	const speed = totalDistance/(3*tries);*/
+  const r = 6371;
+  const latDist = (lat2-lat)*(1/2);
+  const rad1 = latDist*Math.PI/180;
+  const longDist = (long2-long)*(1/2)
+  const rad2 = latDist*Math.PI/180;
+  const val1 = lat*Math.PI/180;
+  const val2 = lat2*Math.PI/180;
+  const dist = Math.sin(rad1)*Math.sin(rad1)+Math.cos(val1)*Math.cos(val2)*Math.sin(rad2)*Math.sin(rad2);
+  const value = 2*r*1000*Math.asin(Math.pow(dist,0.5));
+  const speed = value/(3*tries);
 	return speed;
 }
 setInterval(getLocation,3000);
