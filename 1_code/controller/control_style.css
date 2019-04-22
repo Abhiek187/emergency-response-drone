@@ -9,7 +9,7 @@ body {
 }
 
 .top, .bottom {
-	float: left;
+
 	overflow: hidden;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.5);
@@ -23,7 +23,7 @@ body {
 	bottom: 0;
 }
 .batterynspeed a,.source a {
-	color:red;
+	float: left;
 	margin-left: 5%;
 }
 

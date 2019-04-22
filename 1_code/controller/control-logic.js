@@ -136,7 +136,7 @@ window.onload = function () {
 		label.textContent = `${Math.round(battery.level*100)}%`;
 
  		// Alert if low battery
-		if(battery.level >= 0.2) {
+		if(battery.level <= 0.2) {
 			document.getElementById("low").style.display = "inline-block";
       			label.style.color = 'red';
 		}
