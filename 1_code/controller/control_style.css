@@ -23,7 +23,7 @@ body {
 	bottom: 0;
 }
 .batterynspeed a,.source a {
-
+	color:red;
 	margin-left: 5%;
 }
 
