@@ -4,8 +4,8 @@ while True:
 	try:
 		GPIO.setmode(GPIO.BOARD)
 		#assign gpio pin numbers to trigger&echo
-		PIN_TRIGGER = 7
-		PIN_ECHO = 11
+		PIN_TRIGGER = 13
+		PIN_ECHO = 15
 
 		#assign trigger&echo to proper gpio i/o status
 		GPIO.setwarnings(False)
