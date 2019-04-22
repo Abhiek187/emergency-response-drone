@@ -9,7 +9,8 @@ body {
 }
 
 .top, .bottom {
-	overflow: hidden;
+ padding: 0;	
+white-space: nowrap;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
@@ -21,12 +22,12 @@ body {
 .bottom {
 	bottom: 0;
 }
-.bottom a,.source a {
+.batterynspeed a,.source a {
 	float: left;
 	margin-left: 5%;
 }
 
-.power  {
+.power,.sensor a{
 	float: right;
 	margin-right: 5%;
 }
