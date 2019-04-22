@@ -27,7 +27,7 @@ white-space: nowrap;
 	margin-left: 5%;
 }
 
-.power {
+.power,.sensor{
 	float: right;
 	margin-right: 5%;
 }
