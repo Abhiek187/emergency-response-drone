@@ -22,12 +22,12 @@ white-space: nowrap;
 .bottom {
 	bottom: 0;
 }
-.batterynspeed a,.source a {
+.bottom a,.source a {
 	float: left;
 	margin-left: 5%;
 }
 
-.power, .sensor  {
+.power {
 	float: right;
 	margin-right: 5%;
 }
