@@ -21,12 +21,12 @@ body {
 .bottom {
 	bottom: 0;
 }
-.bottom a,.source a {
+.battery/speed a,.source a {
 	float: left;
 	margin-left: 5%;
 }
 
-.power  {
+.power, .sensor  {
 	float: right;
 	margin-right: 5%;
 }
