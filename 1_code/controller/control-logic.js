@@ -169,14 +169,14 @@ window.onload = function () {
 function loadData() {
   const left = document.querySelector('.sensor-left');
   fetch('Obstacles/leftsensor.txt').then(resp => resp.text()).then(data => {
-    left.textContent = `Left: ${data} cm`; // fetches text file, then displays its content
+    left.textContent = 'Left: ${data} cm'; // fetches text file, then displays its content
     left.style.color = data <= 30.48 ? 'red' : 'white'; // = 1 ft
   }).catch(err => {
     console.log(err);
   });
   const right = document.querySelector('.sensor-right');
   fetch('Obstacles/rightsensor.txt').then(resp => resp.text()).then(data => {
-    right.textContent = `Right: ${data} cm`; // fetches text file, then displays its content
+    right.textContent = 'Right: ${data} cm'; // fetches text file, then displays its content
     right.style.color = data <= 30.48 ? 'red' : 'white'; // = 1 ft
   }).catch(err => {
     console.log(err);
