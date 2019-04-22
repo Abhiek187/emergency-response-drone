@@ -21,7 +21,7 @@ body {
 .bottom {
 	bottom: 0;
 }
-.battery/speed a,.source a {
+.batterynspeed a,.source a {
 	float: left;
 	margin-left: 5%;
 }
