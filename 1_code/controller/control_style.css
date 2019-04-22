@@ -10,7 +10,6 @@ body {
 
 .top, .bottom {
 	float: left;
-text-align: center;
 	overflow: hidden;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.5);
