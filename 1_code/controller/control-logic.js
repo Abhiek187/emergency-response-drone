@@ -168,14 +168,14 @@ window.onload = function () {
 // Get sensor data
 function loadData() {
   const left = document.querySelector('.sensor-left');
-  fetch('Obstacles/distance.txt').then(resp => resp.text()).then(data => {
-    left.textContent = data; // fetches text file, then displays its content
+  fetch('Obstacles/leftsensor.txt').then(resp => resp.text()).then(data => {
+    left.textContent = `Left: ${data} cm`; // fetches text file, then displays its content
   }).catch(err => {
     console.log(err);
   });
   const right = document.querySelector('.sensor-right');
-  fetch('Obstacles/distance.txt').then(resp => resp.text()).then(data => {
-    right.textContent = data; // fetches text file, then displays its content
+  fetch('Obstacles/rightsensor.txt').then(resp => resp.text()).then(data => {
+    right.textContent = `Right: ${data} cm`; // fetches text file, then displays its content
   }).catch(err => {
     console.log(err);
   });
