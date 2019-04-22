@@ -9,7 +9,7 @@ body {
 }
 
 .top, .bottom {
-
+ padding: 0;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
