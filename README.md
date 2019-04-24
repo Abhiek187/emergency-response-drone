@@ -42,73 +42,73 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 
 ## Directory Tree
 ```
-1_code/
-	about/
-		custom.js
-		jquery.js
-		slide-1.jpg
-		slide-2.jpg
-		style.css
-		vegas.min.js
-		wow.min.js
-	controller/
-		Obstacles/
-			distance.txt
-			HCSR04.py
-			leftsensor.txt
-			Multi-HCSR04.py
-			newleft_sensor.py
-			newright_sensor.py
-			rightsensor.txt
-		control-logic.js
-		control.html
-		control_style.css
-	README.md
-2_unit_testing/
-	Physical Data/
-		src/
-			Velocity.java
-		.classpath
-		.gitignore
-		.project
-		Battery.html
-		Controls.jar
-	README.md
-3_integration_testing/
-	ReadWrite/
-		numbers.txt
-		numGen.m
-		numtransfer.html
-		printtest.html
-		write_to_file.py
-	cgi_test.py
-	README.md
-4_data_collection/
-	distance.java
-	README.md
-5_documentation/
-	reports/
-		Group 8 Report1_Full.pdf
-		Group 8 Report1_part1.pdf
-		Group 8 Report1_part2.pdf
-		Group 8 Report2_Full.pdf
-		Group 8 Report2_part1.pdf
-		Group 8 Report2_part2.pdf
-		Group 8 Report3_Full.pdf
-		Group 8 Report3_part1.pdf
-	BrochureSARA.pdf
-	BrochureSARA2.pdf
-	Group 8 Demo 1.pptx
-	Group 8 Demo 2.pttx
-	Individual Contributions (Demo 1).xlsx
-	technical_documentation.pdf
-	User-Documentation.pdf
-6_uml_design/
-	domain_model.uxf
-	get_location.uxf
-	package_diagram.uxf
-.gitattributes
-index.html
-README.md
+1_code/										// Folder for source code
+	about/									// Folder for about page
+		custom.js 							// ???
+		jquery.js 							// ???
+		slide-1.jpg 						// ???
+		slide-2.jpg 						// ???
+		style.css 							// ???
+		vegas.min.js 						// ???
+		wow.min.js 							// ???
+	controller/								// Folder for controller page
+		Obstacles/ 							// Folder for Obstacle detection
+			distance.txt 					// Test text file for storing random values
+			HCSR04.py 						// ???
+			leftsensor.txt 					// Text file for storing left sensor's distance in cm
+			Multi-HCSR04.py 				// ???
+			newleft_sensor.py 				// Script to run left sensor
+			newright_sensor.py 				// Script to run right sensor
+			rightsensor.txt 				// Text file for storing right sensor's distance in cm
+		control-logic.js 					// Logic code for controller page
+		control.html 						// Web file for controller page
+		control_style.css 					// Styles for controler page
+	README.md 								// README explaining this folder
+2_unit_testing/ 							// Folder for unit testing
+	Physical Data/ 							// Folder for Physical Data
+		src/ 								// ???
+			Velocity.java 					// ???
+		.classpath 							// ???
+		.gitignore 							// ???
+		.project 							// ???
+		Battery.html 						// Web demo for getting the battery level of device
+		Controls.jar 						// ???
+	README.md 								// README for unit testing
+3_integration_testing/ 						// Folder for integration testing
+	ReadWrite/ 								// Folder for ReadWrite tests
+		numbers.txt 						// Text file for random numbers
+		numGen.m 							// ???
+		numtransfer.html 					// ???
+		printtest.html 						// Web demo for write_to_file.py
+		write_to_file.py 					// Code to write output to a text file
+	cgi_test.py 							// Code to scrape web data
+	README.md 								// README for integration testing
+4_data_collection/ 							// Folder for data collection
+	distance.java 							// Code to calculate distance using latitude and longitude
+	README.md 								// README for data collection
+5_documentation/ 							// Folder for documentation
+	reports/ 								// Folder for reports
+		Group 8 Report1_Full.pdf 			// Full report 1
+		Group 8 Report1_part1.pdf 			// Part 1 of report 1
+		Group 8 Report1_part2.pdf 			// Part 2 of report 1
+		Group 8 Report2_Full.pdf 			// Full report 2
+		Group 8 Report2_part1.pdf 			// Part 1 of report 2
+		Group 8 Report2_part2.pdf 			// Part 2 of report 2
+		Group 8 Report3_Full.pdf 			// Full report 3
+		Group 8 Report3_part1.pdf 			// Part 1 of report 3
+	BrochureSARA.pdf 						// Brochure for 1st demo
+	BrochureSARA2.pdf 						// Brochure for 2nd demo
+	Group 8 Demo 1.pptx 					// Demo 1 presentation
+	Group 8 Demo 2.pttx 					// Demo 2 presentation
+	Individual Contributions (Demo 1).xlsx 	// Contribution table for demo 1
+	technical_documentation.pdf 			// Technical Documentation
+	User-Documentation.pdf 					// User Documentation
+6_uml_design/ 								// Folder for UML diagrams
+	domain_model.uxf 						// domain model
+	get_location.uxf 						// GetLocation use case diagram
+	package_diagram.uxf 					// package diagram
+.gitattributes 								// Formatting rules for GitHub repo
+index.html 									// Main web file for about page
+README.md 									// The file you're looking at!
 ```
 For more information, please read [our technical documentation](5_documentation/technical_documentation.pdf) and [our user documentation](5_documentation/User-Documentation.pdf).
