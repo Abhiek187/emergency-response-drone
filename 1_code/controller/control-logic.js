@@ -1,3 +1,5 @@
+/* Written and Debugged by: Won Seok Chang, Abhishek Chaudhuri, Srikrishnaraja Mahadas,
+ * Sri Sai Krishna Tottempudi */
 'use strict';
 
 // Get location

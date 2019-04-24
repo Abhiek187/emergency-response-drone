@@ -1,3 +1,4 @@
+// Written and Debugged by: Sri Sai Krishna Tottempudi
 package gps_distance;
 
 public class distance {
@@ -6,7 +7,7 @@ public class distance {
 		System.out.print(distance1(40.52251, 40.52226, -74.4611, -74.46129));
 
 	}
-	
+
 	public static double distance1(double lat1, double lat2, double lon1,
 	        double lon2) {
 

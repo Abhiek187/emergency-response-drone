@@ -1,3 +1,4 @@
+# Written and Debugged by: Shantanu Ghosh, Vishal Venkateswaran
 import RPi.GPIO as GPIO
 import time
 while True:

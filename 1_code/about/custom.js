@@ -1,4 +1,4 @@
-
+// Written and Debugged by: Won Seok Chang
 
 $(document).ready(function() {
 
