@@ -10,7 +10,7 @@ This is the repo for our Software Engineering project. The Search and Rescue Ass
 
 - **obstacles**: With help from its physical data, S.A.R.A. can alert users on how to respond to obstacles in its path when navigating through debris to find victims.
 
-The project is split into 5 folders: code, unit testing, integration testing, data collection, and documentation.
+The project is split into 6 folders: code, unit testing, integration testing, data collection, documentation, and UML design.
 
 Links to the README subfolders:
 - [code](1_code/README.md)
