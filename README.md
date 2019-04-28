@@ -101,6 +101,7 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	Group 8 Demo 1.pptx 					// Demo 1 presentation
 	Group 8 Demo 2.pttx 					// Demo 2 presentation
 	Individual Contributions (Demo 1).xlsx 	// Contribution table for demo 1
+	Group 8 contribution breakdown for demo2.xlsx // Contribution table for demo 2
 	technical_documentation.pdf 			// Technical Documentation
 	User-Documentation.pdf 					// User Documentation
 6_uml_design/ 								// Folder for UML diagrams
