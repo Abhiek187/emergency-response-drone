@@ -1,4 +1,4 @@
-# Written and Debugged by: Shantanu Ghosh, Vishal Venkateswaran
+# Written and Debugged by: Vishal Venkateswaran and Shantanu Ghosh
 import RPi.GPIO as GPIO
 import time
 while True:
