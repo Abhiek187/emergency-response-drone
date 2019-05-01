@@ -1,4 +1,4 @@
-# Written and Debugged by: Shantanu Ghosh, Vishal Venkateswaran
+# Written and Debugged by: Vishal Venkateswaran and Shantanu Ghosh
 import RPi.GPIO as GPIO
 import time
 while True:
@@ -35,7 +35,7 @@ while True:
 		pulse_duration = pulse_end_time - pulse_start_time
 		distance = round(pulse_duration * 17150, 2)
 
-		#write distance to a file
+		#write distance to a file so the webpage can use the data from the sensors
 		with open('rightsensor.txt', 'w') as num_file:
 			num_file.write(str(distance))
 	#allow keyboard interrupt to stop program
