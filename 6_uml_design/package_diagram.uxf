@@ -4,95 +4,94 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1098</x>
-      <y>180</y>
+      <x>306</x>
+      <y>162</y>
       <w>216</w>
-      <h>162</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>ImageProcessing
 --
-Display
+Video
 halign=left</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1098</x>
-      <y>522</y>
+      <x>1026</x>
+      <y>198</y>
       <w>180</w>
       <h>126</h>
     </coordinates>
     <panel_attributes>LocationData
 --
 GPS
-Drone
 halign=left</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>234</x>
-      <y>144</y>
-      <w>288</w>
-      <h>198</h>
+      <x>324</x>
+      <y>468</y>
+      <w>180</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>PhysicalData
 --
-PhysicalData::Controller
-System
+DroneData
 halign=left</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>234</x>
+      <x>1026</x>
       <y>486</y>
-      <w>252</w>
-      <h>162</h>
+      <w>180</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Obstacles
 --
-Obstacles::Controller
+LeftSensor
+RightSensor
 halign=left</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>504</x>
-      <y>270</y>
-      <w>630</w>
-      <h>360</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;import&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;330.0;180.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>504</x>
       <y>216</y>
-      <w>630</w>
-      <h>90</h>
+      <w>558</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;import&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;330.0;30.0</additional_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>558</y>
-      <w>666</w>
-      <h>90</h>
+      <x>396</x>
+      <y>288</y>
+      <w>144</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;import&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;350.0;30.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>522</y>
+      <w>576</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
 </diagram>
