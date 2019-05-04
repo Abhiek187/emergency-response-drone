@@ -54,9 +54,9 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	controller/								// Folder for controller page
 		Obstacles/ 							// Folder for Obstacle detection
 			distance.txt 					// Test text file for storing random values
-			HCSR04.py 						// ???
+			HCSR04.py 						// Initial script to run one sensor
 			leftsensor.txt 					// Text file for storing left sensor's distance in cm
-			Multi-HCSR04.py 				// ???
+			Multi-HCSR04.py 				// Initial script to run multiple sensors
 			newleft_sensor.py 				// Script to run left sensor
 			newright_sensor.py 				// Script to run right sensor
 			rightsensor.txt 				// Text file for storing right sensor's distance in cm
@@ -81,7 +81,7 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 		numtransfer.html 					// ???
 		printtest.html 						// Web demo for write_to_file.py
 		write_to_file.py 					// Code to write output to a text file
-	cgi_test.py 							// Code to scrape web data
+	cgi_test.py 							// Test code to scrape web data
 	README.md 								// README for integration testing
 4_data_collection/ 							// Folder for data collection
 	distance.java 							// Code to calculate distance using latitude and longitude
@@ -98,18 +98,23 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 		Group 8 Report3_part1.pdf 			// Part 1 of report 3
 	BrochureSARA.pdf 						// Brochure for 1st demo
 	BrochureSARA2.pdf 						// Brochure for 2nd demo
+	Group 8 contribution breakdown for demo2.xlsx // Contribution table for demo 2
 	Group 8 Demo 1.pptx 					// Demo 1 presentation
 	Group 8 Demo 2.pttx 					// Demo 2 presentation
 	Individual Contributions (Demo 1).xlsx 	// Contribution table for demo 1
-	Group 8 contribution breakdown for demo2.xlsx // Contribution table for demo 2
-	technical_documentation.pdf 			// Technical Documentation
-	User-Documentation.pdf 					// User Documentation
-6_uml_design/ 								// Folder for UML diagrams
-	domain_model.uxf 						// domain model
-	get_location.uxf 						// GetLocation use case diagram
-	package_diagram.uxf 					// package diagram
+	Technical Documentation.pdf 			// Technical Documentation
+	User Documentation.pdf 					// User Documentation
+6_uml_design/ 								// Folder for UML diagrams (created using UMLet)
+	check_obstacles.png 					// CheckObstacles sequence diagram
+	class_diagram.png 						// Class diagram
+	domain_model.png 						// Domain model
+	get_location.png 						// GetLocation sequence diagram
+	getData.png 							// GetData sequence diagram
+	getStatus.png 							// GetStatus sequence diagram
+	moveDrone.png 							// MoveDrone sequence diagram
+	package_diagram.png 					// Package diagram
 .gitattributes 								// Formatting rules for GitHub repo
 index.html 									// Main web file for about page
-README.md 									// The file you're looking at!
+README.md 									// The README file you're looking at!
 ```
 For more information, please read [our technical documentation](5_documentation/technical_documentation.pdf) and [our user documentation](5_documentation/User-Documentation.pdf).
