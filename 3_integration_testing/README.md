@@ -14,7 +14,7 @@ The location is calculated using the latitude and longitude and then displays th
 on the interface.
 
 #### Battery
-This catagory is used to find the battery level of the device in use and then displays
+This category is used to find the battery level of the device in use and then displays
 the percentage value on the user interface.
 
 #### Sensors
