@@ -113,6 +113,7 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	getStatus.png 							// GetStatus sequence diagram
 	moveDrone.png 							// MoveDrone sequence diagram
 	package_diagram.png 					// Package diagram
+	use_case_diagram.png 					// Use case diagram
 .gitattributes 								// Formatting rules for GitHub repo
 index.html 									// Main web file for about page
 README.md 									// The README file you're looking at!
