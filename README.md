@@ -67,7 +67,7 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 2_unit_testing/ 							// Folder for unit testing
 	Physical Data/ 							// Folder for Physical Data
 		src/ 								// ???
-			Velocity.java 					// ???
+			Velocity.java 					// Test code for how we originally planned to get speed
 		.classpath 							// ???
 		.gitignore 							// ???
 		.project 							// ???
