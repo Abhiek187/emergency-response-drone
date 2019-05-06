@@ -45,10 +45,10 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 1_code/										// Folder for source code
 	about/									// Folder for about page
 		custom.js 							// ???
-		jquery.js 							// ???
+		jquery.js 							// jQuery source code
 		slide-1.jpg 						// JPG file containing an image used in the website
 		slide-2.jpg 						// JPG file containing an image used in the website
-		style.css 							// ???
+		style.css 							// Styles for about page
 		vegas.min.js 						// ???
 		wow.min.js 							// ???
 	controller/								// Folder for controller page
@@ -66,19 +66,19 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	README.md 								// README explaining this folder
 2_unit_testing/ 							// Folder for unit testing
 	Physical Data/ 							// Folder for Physical Data
-		src/ 								// Source code file for Velocity.java
-			Velocity.java 					// Test code for how we originally planned to get speed
+		src/ 								// Source code folder for Velocity.java
+			Velocity.java 					// Original test code to get speed
 		.classpath 							// File that specifies what source files are needed
 		.gitignore 							// File that tells git what files to ignore
 		.project 							// File for the project description for Velocity.Java
 		Battery.html 						// Web demo for getting the battery level of device
-		Controls.jar 						// ???
+		Controls.jar 						// package file for original controller code
 	README.md 								// README for unit testing
 3_integration_testing/ 						// Folder for integration testing
 	ReadWrite/ 								// Folder for ReadWrite tests
 		numbers.txt 						// Text file for random numbers
-		numGen.m 							// ???
-		numtransfer.html 					// ???
+		numGen.m 							// Test file that writes numbers to a text file
+		numtransfer.html 					// Web demo that outputs the number from numbers.txt
 		printtest.html 						// Web demo for write_to_file.py
 		write_to_file.py 					// Code to write output to a text file
 	cgi_test.py 							// Test code to scrape web data
