@@ -46,8 +46,8 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	about/									// Folder for about page
 		custom.js 							// ???
 		jquery.js 							// ???
-		slide-1.jpg 						// ???
-		slide-2.jpg 						// ???
+		slide-1.jpg 						// JPG file containing an image used in the website
+		slide-2.jpg 						// JPG file containing an image used in the website
 		style.css 							// ???
 		vegas.min.js 						// ???
 		wow.min.js 							// ???
@@ -66,7 +66,7 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	README.md 								// README explaining this folder
 2_unit_testing/ 							// Folder for unit testing
 	Physical Data/ 							// Folder for Physical Data
-		src/ 								// ???
+		src/ 								// Source code file for Velocity.java
 			Velocity.java 					// Test code for how we originally planned to get speed
 		.classpath 							// File that specifies what source files are needed
 		.gitignore 							// File that tells git what files to ignore
