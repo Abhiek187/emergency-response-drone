@@ -44,13 +44,13 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 ```
 1_code/										// Folder for source code
 	about/									// Folder for about page
-		custom.js 							// ???
+		custom.js 							// Logic code for about page
 		jquery.js 							// jQuery source code
 		slide-1.jpg 						// JPG file containing an image used in the website
 		slide-2.jpg 						// JPG file containing an image used in the website
 		style.css 							// Styles for about page
-		vegas.min.js 						// ???
-		wow.min.js 							// ???
+		vegas.min.js 						// Plugin to add background images
+		wow.min.js 							// Plugin for animations while scrolling
 	controller/								// Folder for controller page
 		Obstacles/ 							// Folder for Obstacle detection
 			distance.txt 					// Test text file for storing random values
@@ -84,7 +84,7 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	cgi_test.py 							// Test code to scrape web data
 	README.md 								// README for integration testing
 4_data_collection/ 							// Folder for data collection
-	distance.java 							// Code to calculate distance using latitude and longitude
+	distance.java 							// Calculates distance using latitude and longitude
 	README.md 								// README for data collection
 5_documentation/ 							// Folder for documentation
 	reports/ 								// Folder for reports
