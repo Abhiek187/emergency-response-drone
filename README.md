@@ -68,9 +68,9 @@ To see a heat map of your surroundings, you will need a [Seek Thermal Compact Ca
 	Physical Data/ 							// Folder for Physical Data
 		src/ 								// ???
 			Velocity.java 					// Test code for how we originally planned to get speed
-		.classpath 							// ???
-		.gitignore 							// ???
-		.project 							// ???
+		.classpath 							// File that specifies what source files are needed
+		.gitignore 							// File that tells git what files to ignore
+		.project 							// File for the project description for Velocity.Java
 		Battery.html 						// Web demo for getting the battery level of device
 		Controls.jar 						// ???
 	README.md 								// README for unit testing
