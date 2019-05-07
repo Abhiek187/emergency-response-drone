@@ -10,11 +10,11 @@ The first test was made to see that the video component of the HTML loaded prope
 
 ### Location Data
 
-We also observed the latitude and longitude change in real time as we move the phone around. Since we measured location to the 5th decimal place, the changes are noticable when we move a few meters. We can also use this data to track how far we can move with the phone under a wifi signal in [data collection](../4_data_collection).
+We also observed the latitude and longitude change in real time as we move the phone around. Since we measured location to the 5th decimal place, the changes are noticable when we move a few meters. We can also use this data to track how far we can move with the phone under a wifi signal in [data collection](../4_data_collection). This was also done using multiple devices to check for any differences in measurement.  
 
 ### Obstacles
 
-The sensors were tested on a Raspberry Pi. The program runs in an infinite while loop as we check that the distance changes as we move an obstacle around the sensors.
+The sensors were tested on a Raspberry Pi. The program runs in an infinite while loop as we check that the distance changes as we move obstacles of different materials and size at varying distances to test the precision of the sensor.
 
 ### Battery levels
 
